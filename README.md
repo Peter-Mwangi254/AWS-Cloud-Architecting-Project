@@ -1,25 +1,16 @@
 # AWS-Cloud-Architecting-Project
 A repository for the final capstone project of the AWS Academy Cloud Architecting Course
 
-Here’s a **Markdown rubric** for this `README.md` file tailored to the Capstone Project final submission. This rubric will guide learners on structuring a comprehensive and professional `README.md` for your project repositories.
-
 
 ## Introduction  
 ### 1. Project Title  
-- Provide a clear, descriptive, and professional title for your project.  
+Cloud Architecting Capstone Project: Scalable High‑Availability PHP Web Application for Global Development Statistics  
 
-**Example:**  
-`Cloud Architecting Capstone Project: Scalable High Availabity E-commerce Application`
 
 ---
 
 ### 2. Project Overview  
-- Summarize the project in 2-3 sentences. Include the purpose, high-level functionality, and key AWS services used.  
-
-**Checklist:**  
-- [ ] What problem does this project solve?  
-- [ ] Why is this solution important?  
-- [ ] What is the primary AWS architecture implemented?
+The project develops a scalable and highly available PHP web application on AWS for the Example Social Research Organization, a nonprofit, to provide social science researchers with reliable access to global development statistics, such as life expectancy data, addressing the existing website’s issues with growing traffic and security vulnerabilities. It offers secure database hosting via Amazon RDS, anonymous web access through an Application Load Balancer (ALB), and automatic scaling with EC2 instances managed by an Auto Scaling Group (ASG), ensuring researchers can dependably access critical data. Key AWS services include a VPC with public and private subnets, ALB, ASG, RDS for MySQL, and AWS Secrets Manager for secure credential management, delivering a robust and secure solution to support the nonprofit’s mission.
 
 ---
 
