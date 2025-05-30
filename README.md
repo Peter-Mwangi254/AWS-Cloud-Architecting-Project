@@ -31,12 +31,12 @@ The project develops a scalable and highly available PHP web application on AWS 
 - `Highly Available`: Built using a multi-AZ (Availability Zone) deployment to provide redundancy and failover capabilities. This ensures the application remains operational even if one Availability Zone experiences an outage, delivering continuous service to users.  
   
 
-### 2. AWS Services Used  
-- Provide a list of AWS services with a short explanation of their role in the project.  
-
-**Example:**  
-- `Amazon S3`: Stores static assets like images and files.  
-- `Amazon RDS`: Hosts the relational database for the application.
+### 2. AWS Services Used    
+  
+- `Amazon EC2`: Hosts the web servers that run the application, providing the compute capacity needed to process requests and deliver content to users.  
+- `Amazon RDS`: Hosts the relational database that stores the application’s data, offering a managed database solution with automated backups and scalability.
+- `AWS Auto Scaling`: Manages the scaling of EC2 instances to match demand, ensuring the application adapts dynamically to traffic fluctuations.
+- `AWS Elastic Load Balancing`: Distributes incoming traffic across multiple EC2 instances to ensure even load distribution, improving performance and fault tolerance.
 
 ---
 
