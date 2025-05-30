@@ -103,11 +103,8 @@ The project develops a scalable and highly available PHP web application on AWS 
 ---
 
 ## Contributors  
-- List team members and their contributions.  
-
-**Example:**  
-`Jane Doe - Architecture Design, Documentation`  
-`John Smith - Deployment, Security Configuration`
+ 
+`Peter Brian Mwangi - Implementation and project documentation`
 
 ---
 
