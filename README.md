@@ -27,8 +27,11 @@ The project develops a scalable and highly available PHP web application on AWS 
 ## Features and Functionality  
 ### 1. Key Features    
   
-- `Autoscaling`: Automatically adjusts the number of instances based on traffic to ensure the application can handle varying loads efficiently. This feature allows the system to scale up during high demand and scale down during low usage, optimizing resource utilization.  
-- `Highly Available`: Built using a multi-AZ (Availability Zone) deployment to provide redundancy and failover capabilities. This ensures the application remains operational even if one Availability Zone experiences an outage, delivering continuous service to users.  
+- `Autoscaling`: EC2 Auto Scaling group with target tracking policies for CPU utilization.  
+- `High Availability`: Multi‑AZ Amazon RDS and EC2 instances behind an Application Load Balancer.
+- `Secure Secrets Management`: Credentials stored and rotated in AWS Secrets Manager.
+- `Network Segmentation`: Application and database servers in private subnets; only ALB and Bastion host are public.
+- `SSH Access`: Bastion host with restricted IP access for administrators.
   
 
 ### 2. AWS Services Used    
@@ -36,7 +39,11 @@ The project develops a scalable and highly available PHP web application on AWS 
 - `Amazon EC2`: Hosts the web servers that run the application, providing the compute capacity needed to process requests and deliver content to users.  
 - `Amazon RDS`: Hosts the relational database that stores the application’s data, offering a managed database solution with automated backups and scalability.
 - `AWS Auto Scaling`: Manages the scaling of EC2 instances to match demand, ensuring the application adapts dynamically to traffic fluctuations.
-- `AWS Elastic Load Balancing`: Distributes incoming traffic across multiple EC2 instances to ensure even load distribution, improving performance and fault tolerance.
+- `Application Load Balancer`: Distributes HTTP requests across EC2 instances.
+- `AWS Secrets Manager`: Secure storage and automatic rotation of DB credentials.
+- `IAM`: Roles granting least-privilege access.
+- `Amazon VPC`: Network isolation with public and private subnets.
+- `Security Groups & NACLs`: Network-level access controls.
 
 ---
 
