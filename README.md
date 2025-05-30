@@ -25,13 +25,11 @@ The project develops a scalable and highly available PHP web application on AWS 
 ---
 
 ## Features and Functionality  
-### 1. Key Features  
-- List and briefly describe the primary features of your project.  
-
-**Example:**  
-- `Autoscaling`: Automatically adjusts the number of instances based on traffic.  
-- `Highly Available`: Built using multi-AZ deployment.  
-- `Cost Optimization`: Utilizes AWS pricing models such as Reserved Instances or Spot Instances.  
+### 1. Key Features    
+  
+- `Autoscaling`: Automatically adjusts the number of instances based on traffic to ensure the application can handle varying loads efficiently. This feature allows the system to scale up during high demand and scale down during low usage, optimizing resource utilization.  
+- `Highly Available`: Built using a multi-AZ (Availability Zone) deployment to provide redundancy and failover capabilities. This ensures the application remains operational even if one Availability Zone experiences an outage, delivering continuous service to users.  
+  
 
 ### 2. AWS Services Used  
 - Provide a list of AWS services with a short explanation of their role in the project.  
